@@ -5,3 +5,22 @@ docker images
 docker run --name hulk -p 8080:8080 --link some-mysql:mysql hulk
 
 docker run -d --name hulk -p 8080:8080 --link some-mysql:mysql hulk
+
+-------------------------------------------------------------------------
+
+Scale service
+
+- docker service scale scale-hulk-service_internal_integration=0
+
+-------------------------------------------------------------------------
+
+Docker log
+
+- docker logs d0407604d60e
+
+------------------------------------------------------------------------
+
+docker ps | grep "hulk"
+
+docker service ls | grep "hulk"
+
