@@ -24,3 +24,19 @@ docker ps | grep "hulk"
 
 docker service ls | grep "hulk"
 
+------------------------------------------------------------------------
+
+Roll back service to ... containner
+
+docker service update --rollback ua8x58qs955g
+
+------------------------------------------------------------------------
+
+docker service update --image 566647083157.dkr.ecr.us-east-1.amazonaws.com/scale-property-service:v0.0.0-g87854ad --with-registry-auth ua8x58qs955g
+
+------------------------------------------------------------------------
+
+Interactive mode
+
+watch docker service ps ua8x58qs955g
+
