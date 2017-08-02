@@ -40,3 +40,9 @@ Interactive mode
 
 watch docker service ps ua8x58qs955g
 
+-------------------------------------------------------------------------
+
+List service details such as name, image, desired state and current state in container
+
+docker service ps ua8x58qs955g
+
